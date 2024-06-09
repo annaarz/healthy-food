@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAEAEA;
+    font-family: "Arsenal";
+    color: #101616;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+
+    @media(max-width:1490px) {
+        max-width: 90%;
+    }
+}
+
+.containerMin {
+    max-width: 1273px;
+    margin: auto;
+
+    @media (max-width:1300px) {
+        max-width: 95%;
+    }
+}
+
+
+header {
+    padding-top: 39px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        /* отображаем курсор в виде руки при наведении; некоторые
+            считают, что необходимо оставлять стрелочный вид для кнопок */
+        cursor: pointer;
+    }
+
+    
+    .navigation {
+        display: flex;
+        align-items: center;
+
+        aside {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100vh;
+            background-color: #101616;
+            transition: width 0.3s;
+            overflow-y: hidden;
+            z-index: 1;
+    
+            nav {
+                padding: 20px;
+            }
+    
+    
+        }
+        .close{
+padding-left: 250px;
+            top: 10px;
+            right: 30px;
+            color: #EAEAEA;
+            font-size: 50px;
+        }
+        .closeNav{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 24px;
+            width: 150px;
+            a {
+                display: block;
+                position: absolute;
+                color: #EAEAEA;
+                margin-bottom: 10px;
+                z-index: 0;
+            }
+        li{                padding-top: 20px;}
+        }
+    
+        .mainNav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 57px;
+        }
+    .mainNav{
+        @media (max-width:730px) {
+            display: none;
+        }
+    }
+        nav {
+            display: inline-block;
+            padding-left: 79px;
+    
+            a {
+                text-decoration: none;
+                color: #101616;
+                font-size: 20px;
+                &:hover {
+                    text-decoration: dashed #F38906;
+                    
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.logo img {
+    width: 40px;
+}
+
+
+
+
+.healthy {
+    padding: 167px 0 137px 0;
+    position: relative;
+
+    .title {
+        @media (max-width:1295px) {
+            width: 70%;
+
+        }
+
+        @media (max-width:1000px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        
+
+        h1 {
+
+            color: #101616;
+            font-family: "Oleo Script";
+            font-size: 80px;
+            max-width: 570px;
+            margin-bottom: 34px;
+
+            @media (max-width:1100px) {
+                font-size: 70px;
+            }
+        }
+
+        p {
+            max-width: 200px;
+            margin-bottom: 62px;
+        }
+
+        button {
+            background-color: #F38906;
+            padding: 13px 67px;
+            font-size: 30px;
+            font-family: "Arsenal";
+            color: #f4f4f4;
+            border: none;
+            border-radius: 40px;
+            border: #F38906 solid;
+            transition: 0.5s;
+            /* отображаем курсор в виде руки при наведении; некоторые
+            считают, что необходимо оставлять стрелочный вид для кнопок */
+            cursor: pointer;
+            &:hover {
+                background-color: transparent;
+
+                color: #F38906;
+            }
+        }
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .salad {
+            // margin-top: 154px;
+            max-width: 100%;
+
+            @media (max-width:1000px) {
+                display: none;
+
+            }
+        }
+    }
+
+    @media (max-width:1000px) {
+        padding: 137px 0 90px;
+
+    }
+
+    .circle1 {
+        top: -331px;
+        right: -287px;
+        width: 1176px;
+        height: 1176px;
+
+        @media (max-width:1480px) {
+            width: 950px;
+            height: 950px;
+        }
+
+        @media (max-width:1272px) {
+            width: 800px;
+            height: 800px;
+        }
+
+        @media (max-width:1000px) {
+            display: none;
+        }
+    }
+}
+
+
+.blocks {
+    position: relative;
+
+    .containerMin {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 24px 0;
+
+        div {
+            padding: 22px 20px;
+            width: 29.69%;
+            background-color: #F8F8F8;
+            border-radius: 0 50px;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+            @media (max-width:921px) {
+                width: 70%;
+                margin: 0 auto 30px;
+            }
+
+            @media (max-width:400px) {
+                width: 90%;
+
+            }
+
+            h4 {
+                font-family: 'Arsenal';
+                font-size: 20px;
+                margin-top: 7px;
+            }
+
+            p {
+                margin-top: 6px;
+                font-size: 20px;
+            }
+
+        }
+
+        @media (max-width:921px) {
+            display: block;
+
+        }
+    }
+}
+
+.information {
+    padding: 155px 0 167px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h2 {
+        font-family: "Oleo Script";
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 28px;
+        padding-top: 34px;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .learn {
+        background-color: #F38906;
+        padding: 13px 37px;
+        font-size: 30px;
+        font-family: "Arsenal";
+        color: #f4f4f4;
+        border: none;
+        border-radius: 40px;
+        /* отображаем курсор в виде руки при наведении; некоторые
+        считают, что необходимо оставлять стрелочный вид для кнопок */
+        cursor: pointer;
+        &:hover {
+            background-color: transparent;
+            border: #F38906 solid;
+            color: #F38906;
+        }
+    }
+
+    .titleTwo {
+        width: 520px;
+    }
+
+    .twoButtons {
+        display: flex;
+        align-items: center;
+        margin-top: 52px;
+        gap: 21px;
+    }
+
+    .watch {
+        display: flex;
+        font-size: 24px;
+        align-items: center;
+        color: #0B8627;
+        border: none;
+        background-color: transparent;
+
+        img {
+            width: 58px;
+        }
+    }
+
+    @media (max-width:1466px) {
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .learn {
+            padding: 9px 23px;
+            font-size: 20px;
+            max-width: 90%;
+        }
+
+        .watch {
+            max-width: 90%;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width:1090px) {
+        .container {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .twoButtons {
+            justify-content: center;
+        }
+
+        img {
+            max-width: 90%;
+        }
+        padding-bottom: 0px;
+    }
+    @media (max-width:600px) {
+        padding-bottom: 20px;
+p{
+    font-size: 16px;
+}
+.titleTwo{
+    width: 320px;
+}
+    }
+    .popup {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.263);
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .popup-content {
+        // max-width: 700px;
+        background-color: #EAEAEA;
+        padding: 30px;
+        position: relative;
+        border-radius: 20px;
+    }
+
+    .popup-close {
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        text-decoration: none;
+        color: black;
+        padding: 2px 0;
+        width: 50px;
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+
+    }
+
+    .popup-opened.popup {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+    }
+    @media (max-width:920px) {
+.information{
+    padding: 70px;
+}
+    }
+}
+
+.secondBlocks {
+
+    .containerMin {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 24px 0;
+
+
+        img {
+            height: 150px;
+        }
+
+        div {
+            padding: 22px 20px;
+            width: 29.69%;
+            background-color: #F8F8F8;
+            border-radius: 0 50px;
+            transition: 0.7s;
+
+            @media (max-width:921px) {
+                width: 70%;
+                margin: 0 auto 30px;
+            }
+
+            @media (max-width:400px) {
+                width: 90%;
+
+            }
+
+            h4 {
+                font-family: 'Arsenal';
+                font-size: 40px;
+                margin-top: 25px;
+            }
+
+            p {
+                margin-top: 32px;
+                font-size: 20px;
+                margin-bottom: 42px;
+            }
+            &:hover {
+                transform: scale(1.05);
+            }
+
+        }
+
+        @media (max-width:921px) {
+            display: block;
+
+        }
+    }
+    
+}
+
+.menu {
+    margin-top: 200px;
+    @media (max-width:1090px) {
+margin-top: 80px;
+.explore{
+    margin-bottom: 70px;
+}
+            }
+
+    .buttonLearn {
+        text-align: center;
+        margin-bottom: 149px;
+    }
+
+    .learnMore {
+        background-color: #F38906;
+        padding: 13px 37px;
+        font-size: 30px;
+        font-family: "Arsenal";
+        color: #f4f4f4;
+        border: none;
+        border-radius: 40px;
+        border: #F38906 solid;
+        transition: 0.5s;
+        /* отображаем курсор в виде руки при наведении; некоторые
+        считают, что необходимо оставлять стрелочный вид для кнопок */
+        cursor: pointer;
+        &:hover {
+            background-color: transparent;
+            color: #F38906;
+        }
+    }
+
+
+
+    .explore {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 166px;
+
+        h4 {
+            color: #F38906;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-family: "Oleo Script";
+            color: #101616;
+            font-size: 64px;
+        }
+
+        p {
+            max-width: 491px;
+            text-align: center;
+            margin-top: 39px;
+        }
+        @media (max-width:859px) {
+            margin-bottom: 100px;
+
+        }
+        @media (max-width:650px) {
+            h2{
+                font-size: 48px;
+            }
+        }
+        @media (max-width:650px) {
+            h2{
+                font-size: 36px;
+            }
+            h4{
+                font-size: 20px;
+            }
+            p{
+                max-width: 300px;
+            }
+        }
+
+    }
+
+    .block {
+        width: 29.3%;
+        background-color: #F8F8F8;
+        border-radius: 0 50px;
+        transition: 0.7s;
+
+        p {
+            max-width: 284px;
+            margin-left: 20px;
+            min-height: 80px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            width: auto
+        }
+
+        @media (max-width:1172px) {
+            width: 40%;
+            max-width: 373px;
+        }
+
+        @media (max-width:859px) {
+            width: 373px;
+
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .group {
+        margin-bottom: 93px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 93px;
+
+        @media (max-width:1172px) {
+            justify-content: center;
+            gap: 53px;
+        }
+
+        // @media (max-width:1520px) {
+        //     .block {
+        //         max-width: 90%;
+        //     }
+        // }
+
+
+    }
+
+    .bottom {
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            border-style: none;
+            background-color: #F38906;
+            padding: 18px 33px;
+            border-radius: 50px 0 0 0;
+        }
+
+
+        div {
+            display: flex;
+        }
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            font-size: 38px;
+        }
+
+        h4 {
+            font-size: 32px;
+        }
+
+        margin-left: 20px;
+        margin-right: 17px;
+        margin-bottom: 21px;
+    }
+}
+
+.circle1,
+.circle2 {
+    position: absolute;
+    background-color: #0B8627;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #101616;
+    color: #F8F8F8;
+    padding-top: 63px;
+    padding-bottom:40px ;
+
+    h3 {
+        font-family: "Oleo Script";
+        font-size: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        @media (max-width:595px) {
+            font-size: 24px;
+        }
+    }
+
+    .menuFooter {
+        display: flex;
+        gap: 64px;
+        justify-content: center;
+        color: #F8F8F8;
+        margin-bottom: 25px;
+font-size: 24px;
+@media (max-width:595px) {
+    font-size: 16px;
+    gap: 30px;
+}
+    }
+
+    .ikons {
+        display: flex;
+        gap: 57px;
+        justify-content: center;
+        @media (max-width:595px) {
+            gap: 40px;
+        }
+    }
+}
