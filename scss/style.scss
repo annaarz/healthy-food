@@ -312,12 +312,14 @@ padding-left: 250px;
         color: #f4f4f4;
         border: none;
         border-radius: 40px;
+        border: #F38906 solid;
+        transition: 0.5s;
         /* отображаем курсор в виде руки при наведении; некоторые
         считают, что необходимо оставлять стрелочный вид для кнопок */
         cursor: pointer;
         &:hover {
             background-color: transparent;
-            border: #F38906 solid;
+
             color: #F38906;
         }
     }
